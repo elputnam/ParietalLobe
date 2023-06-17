@@ -30,8 +30,9 @@ function draw() {
   }
 
   push();
-  scale(2);
-  translate(random(width*.24, width*.26), random(height*.24,height*.26));
+  //scale(2);
+  //translate(random(width*.24, width*.26), random(height*.24,height*.26));
+  translate(random(width*.49, width*.51), random(height*.49,height*.51));
   if (frameCount%10==0){
   bruise();
   }
