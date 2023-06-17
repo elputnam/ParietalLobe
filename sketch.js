@@ -89,7 +89,7 @@ class Drip {
 function bruise(){
     //circle star
     //fill(inside);
-    fill(random(0, 360), random(100), random(100), random(50));
+    fill(random(50, 270), random(100), random(100), random(50));
     noStroke();
     //stroke(180, 100, 100);
     x = random(-10,10);
