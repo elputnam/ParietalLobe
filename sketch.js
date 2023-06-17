@@ -52,7 +52,7 @@ class Drip {
 
   move() {
 		// this.x = this.x + random(-0.5, 0.5);
-		//this.y = this.y + random(10);
+		this.y = this.y + random(10);
 	}
 
   edges(){
