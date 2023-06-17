@@ -15,12 +15,12 @@ function setup() {
   frameRate(10);
 
   for (var j = 0; j < 1000; j++) {
-		drips[j] = new Drip(random(width), random(height), random(10), random(90), 50);
+		drips[j] = new Drip(random(width), random(height), random(10), random(90), random(360));
 }
 }
 
 function draw() {
-  background(20, random(100), 100, 5);
+  background(random(255), 5);
 
    //glitter rain
    for (let i = 0; i < drips.length; i++) {
