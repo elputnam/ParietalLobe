@@ -27,7 +27,7 @@ function setup() {
 
 function draw() {
   // background(20, 50, 100, 5);
-  background(0, 0.5)
+  background(0, 1)
 
    //gold blood
   for (let i = 0; i < drips.length; i++) {
