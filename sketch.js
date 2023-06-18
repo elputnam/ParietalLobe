@@ -14,8 +14,8 @@ let a = 100
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 100, 100, 100);
-  frameRate(10);
-  background(255);
+  frameRate(20);
+  background(0);
   i1 = width;
   i2 = height;
   x = width/2;
@@ -27,7 +27,7 @@ function setup() {
 
 function draw() {
   // background(20, 50, 100, 5);
-  background(255, 0.5)
+  background(0, 0.5)
 
    //gold blood
   for (let i = 0; i < drips.length; i++) {
@@ -41,10 +41,10 @@ function draw() {
   // translate(width*.25, height*.25)
   // translate(random(width*.24, width*.26), random(height*.24,height*.26));
   // translate(random(width*.49, width*.51), random(height*.49,height*.51));
-  // if (frameCount%10==0){
+  if (frameCount%2==0){
   bruise();
   
-  // }
+  }
   pop();
   //if (i >= 300){
     
@@ -54,7 +54,7 @@ function draw() {
   hugh -= 1;
   a -= 0.3;
 
-  if (hugh == 50){
+  if (hugh == 60){
     hugh = 270
     i1 = random(width);
     i2 = random(height);
@@ -63,9 +63,9 @@ function draw() {
     a = 100
   }
 
-  if (a < 5){
-    a = 5;
-  }
+  // if (a < 5){
+  //   a = 5;
+  // }
   
 
 }
